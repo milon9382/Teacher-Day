@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teachers' Day</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b") no-repeat center/cover;
+      position: relative;
+      color: #fff;
+    }
+
+    /* Overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.55);
+    }
+
+    .card {
+      position: relative;
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      max-width: 600px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      z-index: 2;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .card h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffdd57;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #ffd369;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .card h1 {
+        font-size: 2rem;
+      }
+      .card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🌸 Happy Teachers' Day 🌸</h1>
+    <p>
+      প্রিয় শিক্ষকবৃন্দ,<br>
+      আপনাদের অনুপ্রেরণা, ভালোবাসা ও জ্ঞান আমাদের জীবনকে আলোকিত করেছে।  
+      আজকের দিনটি আপনাদের জন্যই বিশেষ।  
+      <br><br>💐 ধন্যবাদ স্যার/ম্যাডাম 💐
+    </p>
+    <div class="signature">— Milan Mondal</div>
+  </div>
+</body>
+</html>
